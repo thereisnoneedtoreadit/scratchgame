@@ -1,20 +1,22 @@
 package org.example.model;
 
+import org.example.model.enumeration.WinCombinationGroup;
+
 import java.util.List;
 
 public class WinCombinationSettings {
 
-    private Integer reward_multiplier;
+    private Float reward_multiplier;
     private String when;
     private Integer count;
-    private String group;
+    private WinCombinationGroup group;
     private List<List<String>> covered_areas;
 
-    public Integer getReward_multiplier() {
+    public Float getReward_multiplier() {
         return reward_multiplier;
     }
 
-    public void setReward_multiplier(Integer reward_multiplier) {
+    public void setReward_multiplier(Float reward_multiplier) {
         this.reward_multiplier = reward_multiplier;
     }
 
@@ -34,19 +36,19 @@ public class WinCombinationSettings {
         this.count = count;
     }
 
-    public String getGroup() {
-        return group;
-    }
-
-    public void setGroup(String group) {
-        this.group = group;
-    }
-
     public List<List<String>> getCovered_areas() {
         return covered_areas;
     }
 
     public void setCovered_areas(List<List<String>> covered_areas) {
         this.covered_areas = covered_areas;
+    }
+
+    public WinCombinationGroup getGroup() {
+        return group;
+    }
+
+    public void setGroup(WinCombinationGroup group) {
+        this.group = group;
     }
 }

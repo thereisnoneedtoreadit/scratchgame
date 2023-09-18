@@ -5,16 +5,16 @@ import org.example.model.enumeration.SymbolType;
 
 public class SymbolDescription {
 
-    private Integer reward_multiplier;
+    private Float reward_multiplier;
     private SymbolType type;
     private Impact impact;
     private Integer extra;
 
-    public Integer getReward_multiplier() {
+    public Float getReward_multiplier() {
         return reward_multiplier;
     }
 
-    public void setReward_multiplier(Integer reward_multiplier) {
+    public void setReward_multiplier(Float reward_multiplier) {
         this.reward_multiplier = reward_multiplier;
     }
 

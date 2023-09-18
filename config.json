@@ -76,6 +76,90 @@
           "E": 5,
           "F": 6
         }
+      },
+      {
+        "column": 0,
+        "row": 2,
+        "symbols": {
+          "A": 1,
+          "B": 2,
+          "C": 3,
+          "D": 4,
+          "E": 5,
+          "F": 6
+        }
+      },
+      {
+        "column": 1,
+        "row": 0,
+        "symbols": {
+          "A": 1,
+          "B": 2,
+          "C": 3,
+          "D": 4,
+          "E": 5,
+          "F": 6
+        }
+      },
+      {
+        "column": 1,
+        "row": 1,
+        "symbols": {
+          "A": 1,
+          "B": 2,
+          "C": 3,
+          "D": 4,
+          "E": 5,
+          "F": 6
+        }
+      },
+      {
+        "column": 1,
+        "row": 2,
+        "symbols": {
+          "A": 1,
+          "B": 2,
+          "C": 3,
+          "D": 4,
+          "E": 5,
+          "F": 6
+        }
+      },
+      {
+        "column": 2,
+        "row": 0,
+        "symbols": {
+          "A": 1,
+          "B": 2,
+          "C": 3,
+          "D": 4,
+          "E": 5,
+          "F": 6
+        }
+      },
+      {
+        "column": 2,
+        "row": 1,
+        "symbols": {
+          "A": 1,
+          "B": 2,
+          "C": 3,
+          "D": 4,
+          "E": 5,
+          "F": 6
+        }
+      },
+      {
+        "column": 2,
+        "row": 2,
+        "symbols": {
+          "A": 1,
+          "B": 2,
+          "C": 3,
+          "D": 4,
+          "E": 5,
+          "F": 6
+        }
       }
     ],
     "bonus_symbols": {
@@ -89,12 +173,6 @@
     }
   },
   "win_combinations": {
-    "same_symbol_3_times": {
-      "reward_multiplier": 1,
-      "when": "same_symbols",
-      "count": 3,
-      "group": "same_symbols"
-    },
     "same_symbol_4_times": {
       "reward_multiplier": 1.5,
       "when": "same_symbols",
@@ -129,6 +207,12 @@
       "reward_multiplier": 20,
       "when": "same_symbols",
       "count": 9,
+      "group": "same_symbols"
+    },
+    "same_symbol_3_times": {
+      "reward_multiplier": 1,
+      "when": "same_symbols",
+      "count": 3,
       "group": "same_symbols"
     },
     "same_symbols_horizontally": {

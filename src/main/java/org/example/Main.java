@@ -3,6 +3,7 @@ package org.example;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.example.game.ScratchGame;
 import org.example.model.GameConfiguration;
+import org.example.model.GameResult;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -25,11 +26,11 @@ public class Main {
         if (configPath == null || bettingAmount == null)
             throw new IllegalStateException("'config' and 'betting-amount' args should be provided");
 
+        ObjectMapper mapper = new ObjectMapper();
+        GameConfiguration gameConfiguration = mapper.readValue(Files.readAllBytes(Paths.get(configPath)), GameConfiguration.class);
+        GameResult gameResult = new ScratchGame(gameConfiguration).play(bettingAmount);
 
-        GameConfiguration gameConfiguration =
-                new ObjectMapper().readValue(Files.readAllBytes(Paths.get(configPath)), GameConfiguration.class);
-
-        new ScratchGame(gameConfiguration).start();
+        System.out.println(mapper.writeValueAsString(gameResult));
     }
 
 }
