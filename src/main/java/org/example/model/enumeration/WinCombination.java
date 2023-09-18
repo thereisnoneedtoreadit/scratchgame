@@ -8,6 +8,8 @@ public enum WinCombination {
     same_symbol_7_times,
     same_symbol_8_times,
     same_symbol_9_times,
+
+    //not supported
     same_symbols_horizontally,
     same_symbols_vertically,
     same_symbols_diagonally_left_to_right,

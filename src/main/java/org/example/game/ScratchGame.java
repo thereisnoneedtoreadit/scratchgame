@@ -10,6 +10,7 @@ import java.util.stream.Collectors;
 
 public class ScratchGame {
 
+    // dynamic matrix is not supported
     private static final int COLUMNS = 3;
     private static final int ROWS = 3;
 
